@@ -1,0 +1,86 @@
+C:\Users\antti\OneDrive - Oulun ammattikorkeakoulu\VisualStudio\TestiDB\TestiDB\bin\Debug\TestiDB.exe.config
+C:\Users\antti\OneDrive - Oulun ammattikorkeakoulu\VisualStudio\TestiDB\TestiDB\bin\Debug\TestiDB.exe
+C:\Users\antti\OneDrive - Oulun ammattikorkeakoulu\VisualStudio\TestiDB\TestiDB\bin\Debug\TestiDB.pdb
+C:\Users\antti\OneDrive - Oulun ammattikorkeakoulu\VisualStudio\TestiDB\TestiDB\obj\Debug\TestiDB.csprojAssemblyReference.cache
+C:\Users\antti\OneDrive - Oulun ammattikorkeakoulu\VisualStudio\TestiDB\TestiDB\obj\Debug\TestiDB.Form1.resources
+C:\Users\antti\OneDrive - Oulun ammattikorkeakoulu\VisualStudio\TestiDB\TestiDB\obj\Debug\TestiDB.Properties.Resources.resources
+C:\Users\antti\OneDrive - Oulun ammattikorkeakoulu\VisualStudio\TestiDB\TestiDB\obj\Debug\TestiDB.csproj.GenerateResource.cache
+C:\Users\antti\OneDrive - Oulun ammattikorkeakoulu\VisualStudio\TestiDB\TestiDB\obj\Debug\TestiDB.csproj.CoreCompileInputs.cache
+C:\Users\antti\OneDrive - Oulun ammattikorkeakoulu\VisualStudio\TestiDB\TestiDB\obj\Debug\TestiDB.exe
+C:\Users\antti\OneDrive - Oulun ammattikorkeakoulu\VisualStudio\TestiDB\TestiDB\obj\Debug\TestiDB.pdb
+C:\Users\Ville\Desktop\TestiDB\TestiDB\bin\Debug\TestiDB.exe.config
+C:\Users\Ville\Desktop\TestiDB\TestiDB\bin\Debug\TestiDB.exe
+C:\Users\Ville\Desktop\TestiDB\TestiDB\bin\Debug\TestiDB.pdb
+C:\Users\Ville\Desktop\TestiDB\TestiDB\bin\Debug\EntityFramework.dll
+C:\Users\Ville\Desktop\TestiDB\TestiDB\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Ville\Desktop\TestiDB\TestiDB\bin\Debug\System.Data.SQLite.dll
+C:\Users\Ville\Desktop\TestiDB\TestiDB\bin\Debug\System.Data.SQLite.EF6.dll
+C:\Users\Ville\Desktop\TestiDB\TestiDB\bin\Debug\System.Data.SQLite.Linq.dll
+C:\Users\Ville\Desktop\TestiDB\TestiDB\bin\Debug\EntityFramework.xml
+C:\Users\Ville\Desktop\TestiDB\TestiDB\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Ville\Desktop\TestiDB\TestiDB\bin\Debug\System.Data.SQLite.xml
+C:\Users\Ville\Desktop\TestiDB\TestiDB\obj\Debug\TestiDB.csprojAssemblyReference.cache
+C:\Users\Ville\Desktop\TestiDB\TestiDB\obj\Debug\TestiDB.Form1.resources
+C:\Users\Ville\Desktop\TestiDB\TestiDB\obj\Debug\TestiDB.Properties.Resources.resources
+C:\Users\Ville\Desktop\TestiDB\TestiDB\obj\Debug\TestiDB.csproj.GenerateResource.cache
+C:\Users\Ville\Desktop\TestiDB\TestiDB\obj\Debug\TestiDB.csproj.CoreCompileInputs.cache
+C:\Users\Ville\Desktop\TestiDB\TestiDB\obj\Debug\TestiDB.csproj.CopyComplete
+C:\Users\Ville\Desktop\TestiDB\TestiDB\obj\Debug\TestiDB.exe
+C:\Users\Ville\Desktop\TestiDB\TestiDB\obj\Debug\TestiDB.pdb
+C:\Users\Ville\Desktop\TestiDB - Copy\TestiDB\bin\Debug\TestiDB.exe.config
+C:\Users\Ville\Desktop\TestiDB - Copy\TestiDB\bin\Debug\TestiDB.exe
+C:\Users\Ville\Desktop\TestiDB - Copy\TestiDB\bin\Debug\TestiDB.pdb
+C:\Users\Ville\Desktop\TestiDB - Copy\TestiDB\bin\Debug\EntityFramework.dll
+C:\Users\Ville\Desktop\TestiDB - Copy\TestiDB\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Ville\Desktop\TestiDB - Copy\TestiDB\bin\Debug\System.Data.SQLite.dll
+C:\Users\Ville\Desktop\TestiDB - Copy\TestiDB\bin\Debug\System.Data.SQLite.EF6.dll
+C:\Users\Ville\Desktop\TestiDB - Copy\TestiDB\bin\Debug\System.Data.SQLite.Linq.dll
+C:\Users\Ville\Desktop\TestiDB - Copy\TestiDB\bin\Debug\EntityFramework.xml
+C:\Users\Ville\Desktop\TestiDB - Copy\TestiDB\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Ville\Desktop\TestiDB - Copy\TestiDB\bin\Debug\System.Data.SQLite.xml
+C:\Users\Ville\Desktop\TestiDB - Copy\TestiDB\obj\Debug\TestiDB.csprojAssemblyReference.cache
+C:\Users\Ville\Desktop\TestiDB - Copy\TestiDB\obj\Debug\TestiDB.Form1.resources
+C:\Users\Ville\Desktop\TestiDB - Copy\TestiDB\obj\Debug\TestiDB.Properties.Resources.resources
+C:\Users\Ville\Desktop\TestiDB - Copy\TestiDB\obj\Debug\TestiDB.csproj.GenerateResource.cache
+C:\Users\Ville\Desktop\TestiDB - Copy\TestiDB\obj\Debug\TestiDB.csproj.CoreCompileInputs.cache
+C:\Users\Ville\Desktop\TestiDB - Copy\TestiDB\obj\Debug\TestiDB.csproj.CopyComplete
+C:\Users\Ville\Desktop\TestiDB - Copy\TestiDB\obj\Debug\TestiDB.exe
+C:\Users\Ville\Desktop\TestiDB - Copy\TestiDB\obj\Debug\TestiDB.pdb
+C:\Users\Ville\Desktop\Projekti\TestiDB - Copy\TestiDB\obj\Debug\TestiDB.csprojAssemblyReference.cache
+C:\Users\Ville\Desktop\Projekti\TestiDB - Copy\TestiDB\obj\Debug\TestiDB.Form1.resources
+C:\Users\Ville\Desktop\Projekti\TestiDB - Copy\TestiDB\obj\Debug\TestiDB.Properties.Resources.resources
+C:\Users\Ville\Desktop\Projekti\TestiDB - Copy\TestiDB\obj\Debug\TestiDB.csproj.GenerateResource.cache
+C:\Users\Ville\Desktop\Projekti\TestiDB - Copy\TestiDB\obj\Debug\TestiDB.csproj.CoreCompileInputs.cache
+C:\Users\Ville\Desktop\Projekti\TestiDB - Copy\TestiDB\obj\Debug\TestiDB.exe
+C:\Users\Ville\Desktop\Projekti\TestiDB - Copy\TestiDB\obj\Debug\TestiDB.pdb
+C:\Users\Ville\Desktop\Projekti\TestiDB - Copy\TestiDB\bin\Debug\TestiDB.exe.config
+C:\Users\Ville\Desktop\Projekti\TestiDB - Copy\TestiDB\bin\Debug\TestiDB.exe
+C:\Users\Ville\Desktop\Projekti\TestiDB - Copy\TestiDB\bin\Debug\TestiDB.pdb
+C:\Users\Ville\Desktop\Projekti\TestiDB - Copy\TestiDB\bin\Debug\EntityFramework.dll
+C:\Users\Ville\Desktop\Projekti\TestiDB - Copy\TestiDB\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Ville\Desktop\Projekti\TestiDB - Copy\TestiDB\bin\Debug\System.Data.SQLite.dll
+C:\Users\Ville\Desktop\Projekti\TestiDB - Copy\TestiDB\bin\Debug\System.Data.SQLite.EF6.dll
+C:\Users\Ville\Desktop\Projekti\TestiDB - Copy\TestiDB\bin\Debug\System.Data.SQLite.Linq.dll
+C:\Users\Ville\Desktop\Projekti\TestiDB - Copy\TestiDB\bin\Debug\EntityFramework.xml
+C:\Users\Ville\Desktop\Projekti\TestiDB - Copy\TestiDB\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Ville\Desktop\Projekti\TestiDB - Copy\TestiDB\bin\Debug\System.Data.SQLite.xml
+C:\Users\Ville\Desktop\Projekti\TestiDB - Copy\TestiDB\obj\Debug\TestiDB.csproj.CopyComplete
+C:\Users\Ville\Desktop\Opiskelu\vuosi 2\jakso 2\projekti\TestiDB - Copy\TestiDB\bin\Debug\TestiDB.exe.config
+C:\Users\Ville\Desktop\Opiskelu\vuosi 2\jakso 2\projekti\TestiDB - Copy\TestiDB\bin\Debug\TestiDB.exe
+C:\Users\Ville\Desktop\Opiskelu\vuosi 2\jakso 2\projekti\TestiDB - Copy\TestiDB\bin\Debug\TestiDB.pdb
+C:\Users\Ville\Desktop\Opiskelu\vuosi 2\jakso 2\projekti\TestiDB - Copy\TestiDB\bin\Debug\EntityFramework.dll
+C:\Users\Ville\Desktop\Opiskelu\vuosi 2\jakso 2\projekti\TestiDB - Copy\TestiDB\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Ville\Desktop\Opiskelu\vuosi 2\jakso 2\projekti\TestiDB - Copy\TestiDB\bin\Debug\System.Data.SQLite.dll
+C:\Users\Ville\Desktop\Opiskelu\vuosi 2\jakso 2\projekti\TestiDB - Copy\TestiDB\bin\Debug\System.Data.SQLite.EF6.dll
+C:\Users\Ville\Desktop\Opiskelu\vuosi 2\jakso 2\projekti\TestiDB - Copy\TestiDB\bin\Debug\System.Data.SQLite.Linq.dll
+C:\Users\Ville\Desktop\Opiskelu\vuosi 2\jakso 2\projekti\TestiDB - Copy\TestiDB\bin\Debug\EntityFramework.xml
+C:\Users\Ville\Desktop\Opiskelu\vuosi 2\jakso 2\projekti\TestiDB - Copy\TestiDB\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Ville\Desktop\Opiskelu\vuosi 2\jakso 2\projekti\TestiDB - Copy\TestiDB\bin\Debug\System.Data.SQLite.xml
+C:\Users\Ville\Desktop\Opiskelu\vuosi 2\jakso 2\projekti\TestiDB - Copy\TestiDB\obj\Debug\TestiDB.csprojAssemblyReference.cache
+C:\Users\Ville\Desktop\Opiskelu\vuosi 2\jakso 2\projekti\TestiDB - Copy\TestiDB\obj\Debug\TestiDB.Form1.resources
+C:\Users\Ville\Desktop\Opiskelu\vuosi 2\jakso 2\projekti\TestiDB - Copy\TestiDB\obj\Debug\TestiDB.Properties.Resources.resources
+C:\Users\Ville\Desktop\Opiskelu\vuosi 2\jakso 2\projekti\TestiDB - Copy\TestiDB\obj\Debug\TestiDB.csproj.GenerateResource.cache
+C:\Users\Ville\Desktop\Opiskelu\vuosi 2\jakso 2\projekti\TestiDB - Copy\TestiDB\obj\Debug\TestiDB.csproj.CoreCompileInputs.cache
+C:\Users\Ville\Desktop\Opiskelu\vuosi 2\jakso 2\projekti\TestiDB - Copy\TestiDB\obj\Debug\TestiDB.csproj.CopyComplete
+C:\Users\Ville\Desktop\Opiskelu\vuosi 2\jakso 2\projekti\TestiDB - Copy\TestiDB\obj\Debug\TestiDB.exe
+C:\Users\Ville\Desktop\Opiskelu\vuosi 2\jakso 2\projekti\TestiDB - Copy\TestiDB\obj\Debug\TestiDB.pdb

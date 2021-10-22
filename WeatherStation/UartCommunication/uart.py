@@ -1,48 +1,24 @@
 import serial
+import threading
 import datetime, time
 import sqlite3
+import atexit
+
+import weather_station_1
 
 
+w_station_1 = weather_station_1.Weather_Station("w_station_1", serial.Serial(port='/dev/ttyACM0',baudrate=9600),
+												 sqlite3.connect('/home/pi/shared/weatherDBtest.sqlite3'))
 
-ser = serial.Serial(port='/dev/ttyACM0',baudrate=9600,timeout=2)
-
-con = sqlite3.connect('/home/pi/shared/weatherDBtest.sqlite3')
-c = con.cursor()
-
-lux = 0
-temp = 0
-humidity = 0
-
-def serial_data():
-	while True:
-		date = datetime.datetime.now()
-
-		line = ser.readline().decode('utf-8').rstrip()
-		if line:
-			a_string = line.split()
-			#print(a_string)
-
-			lux = a_string[0]
-			temp = a_string[1]
-			humidity = a_string[2]
-
-			print(lux)
-			print(temp)
-			print(humidity)
-
-			#print(date)
-			#print("\n")
+class Thread(threading.Thread):
+	def __init__(self, t, *args):
+		threading.Thread.__init__(self, target=t, args=args)
+		self.start()
 
 
-			c.execute(f"INSERT INTO weather(date, lux, temp, humidity) VALUES ('{date}', '{lux}', '{temp}', '{humidity}')")
-			con.commit()
+def main():
+	weather_station = Thread(w_station_1.serial_data())
 
 
-serial_data()
-
-con.commit()
-con.close()
-
-ser.close()
-
-
+if __name__ == "__main__":
+	main()

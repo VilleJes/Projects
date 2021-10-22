@@ -392,18 +392,18 @@ namespace TestiDB
         private System.Windows.Forms.Button buttonLight;
         private System.Windows.Forms.Button buttonTemp;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.DataVisualization.Charting.Chart chartHumidity;
-        private System.Windows.Forms.DataVisualization.Charting.Chart chartTemperature;
-        private System.Windows.Forms.DataVisualization.Charting.Chart chartLightlevel;
+        public System.Windows.Forms.DataVisualization.Charting.Chart chartHumidity;
+        public System.Windows.Forms.DataVisualization.Charting.Chart chartTemperature;
+        public System.Windows.Forms.DataVisualization.Charting.Chart chartLightlevel;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
         private System.Data.SQLite.SQLiteCommand sqLiteCommand1;
         private System.Data.SQLite.SQLiteCommand sqLiteCommand2;
-        private System.Windows.Forms.DataVisualization.Charting.Chart chart1;
-        private System.Windows.Forms.DataVisualization.Charting.Chart chart2;
-        private System.Windows.Forms.DataVisualization.Charting.Chart chart3;
-        private System.Windows.Forms.DataVisualization.Charting.Chart chart4;
-        private System.Windows.Forms.DataVisualization.Charting.Chart chart5;
-        private System.Windows.Forms.DataVisualization.Charting.Chart chart6;
+        public System.Windows.Forms.DataVisualization.Charting.Chart chart1;
+        public System.Windows.Forms.DataVisualization.Charting.Chart chart2;
+        public System.Windows.Forms.DataVisualization.Charting.Chart chart3;
+        public System.Windows.Forms.DataVisualization.Charting.Chart chart4;
+        public System.Windows.Forms.DataVisualization.Charting.Chart chart5;
+        public System.Windows.Forms.DataVisualization.Charting.Chart chart6;
         private System.Windows.Forms.Button buttonHumidity;
         private System.Windows.Forms.Label label2;
     }

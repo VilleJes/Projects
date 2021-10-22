@@ -8,6 +8,8 @@ namespace TestiDB
 {
     static class Class1
     {
+        public static Form1 form1; // = new Form1(); // Place this var out of the constructor
+
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
@@ -16,7 +18,7 @@ namespace TestiDB
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(form1 = new Form1());
         }
     }
 }

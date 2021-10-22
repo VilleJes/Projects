@@ -7,8 +7,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Data.SQLite;
-
 
 namespace TestiDB
 {
@@ -16,13 +14,13 @@ namespace TestiDB
     {
         bool clikkeri1, clikkeri2, clikkeri3 = true;
         private Timer timer1;
-
         public Form1()
         {
             InitializeComponent();
         }
 
         //Interval for chart updating
+        //set to update once every 60 seconds
         public void InitTimer()
         {
             timer1 = new Timer();
@@ -34,27 +32,33 @@ namespace TestiDB
         //what the chart update tick does
         private void timer1_Tick(object sender, EventArgs e)
         {
-            SQLiteConnection sqlite_conn;
-            sqlite_conn = CreateConnection();
+            //create SQLiteConnection object from SqliteConnection class
+            SqliteConnection sqlConnection = new SqliteConnection();
 
             clearCharts();
-            readCurrentWeather(sqlite_conn);
-            readWeather(sqlite_conn);
-            readWeather30(sqlite_conn);
 
-            sqlite_conn.Close();
+            //create CurrentWeather object
+            //read current weather
+            //created sqlConnection is sent as parameter to establsih connection and execute query
+            CurrentWeather currentW = new CurrentWeather();
+            currentW.ReadCurrentWeather(sqlConnection.CreateConnection());
+
+            //create ReadWeather30 object
+            //read last 30 weather datapoints
+            //created sqlConnection is sent as parameter to establsih connection and execute query
+            ReadWeather30 read30 = new ReadWeather30();
+            read30.readWeather30(sqlConnection.CreateConnection());
+
+            //create ReadWeather object
+            //read complete weather history
+            //created sqlConnection is sent as parameter to establsih connection and execute query
+            ReadWeather readW = new ReadWeather();
+            readW.readWeather(sqlConnection.CreateConnection());
         }
+
         //On form load populate charts with data and create connection to the database
         private void Form1_Load(object sender, EventArgs e)
         {
-            SQLiteConnection sqlite_conn;
-            sqlite_conn = CreateConnection();
-            InitTimer();
-
-            readCurrentWeather(sqlite_conn);
-            readWeather(sqlite_conn);
-            readWeather30(sqlite_conn);
-
             chart1.ChartAreas["ChartArea1"].AxisX.MajorGrid.Enabled = false;
 
             chartLightlevel.ChartAreas["ChartArea1"].AxisX.MajorGrid.Enabled = false;
@@ -65,112 +69,29 @@ namespace TestiDB
 
             chartHumidity.ChartAreas["ChartArea1"].AxisX.MajorGrid.Enabled = false;
             chartHumidity.ChartAreas["ChartArea1"].AxisX.LabelStyle.Enabled = false;
-        }
 
-        //create connection
-        static SQLiteConnection CreateConnection()
-        {
-            SQLiteConnection sqlite_conn;
+            //start the timer for chart updating
+            InitTimer();
+            //create SQLiteConnection object from SqliteConnection class
+            SqliteConnection sqlConnection = new SqliteConnection();
 
-            //Connection address located on raspberry pi on the same network
-            sqlite_conn = new SQLiteConnection("Data source = \\\\raspberrypi\\share\\weatherDBtest.sqlite3");
-            sqlite_conn.ParseViaFramework = true;
+            //create CurrentWeather object
+            //read current weather
+            //created sqlConnection is sent as parameter to establsih connection and execute query
+            CurrentWeather currentW = new CurrentWeather();
+            currentW.ReadCurrentWeather(sqlConnection.CreateConnection());
 
-            try
-            {
-                sqlite_conn.Open();
-            }
-            catch (Exception ex)
-            {
+            //create ReadWeather30 object
+            //read last 30 weather datapoints
+            //created sqlConnection is sent as parameter to establsih connection and execute query
+            ReadWeather30 read30 = new ReadWeather30();
+            read30.readWeather30(sqlConnection.CreateConnection());
 
-            }
-            //pass the generated connection as parameter to be used with the data read functions
-            return sqlite_conn;
-        }
-
-
-        //Function to show last 30 ticks of weather data
-        void readWeather30(SQLiteConnection sqlite_conn)
-        {
-            SQLiteDataReader sqlite_datareader;
-            SQLiteCommand sqlite_cmd;
-            sqlite_cmd = sqlite_conn.CreateCommand();
-            sqlite_cmd.CommandText = "SELECT lux, temp, humidity, date FROM weather order by ROWID desc limit 30";
-
-            sqlite_datareader = sqlite_cmd.ExecuteReader();
-            while (sqlite_datareader.Read())
-            {
-                //get data from different rows in database, represented by integer value as parameter
-                string myLUXreader = sqlite_datareader.GetString(0);
-                string myTEMPreader = sqlite_datareader.GetString(1);
-                string myHUMreader = sqlite_datareader.GetString(2);
-                string myDATEreader = sqlite_datareader.GetString(3);
-
-                //Manipulate data to only show relevant decimals
-                myDATEreader = myDATEreader.Substring(10);
-                myDATEreader = myDATEreader.Remove(myDATEreader.Length - 7);
-
-                chart4.Series["Last 30 Humidity Values"].Points.AddXY(myDATEreader, myHUMreader);
-                chart5.Series["Last 30 Celcius Values"].Points.AddXY(myDATEreader, myTEMPreader);
-                chart6.Series["Last 30 Lux Values"].Points.AddXY(myDATEreader, myLUXreader);
-
-            }
-        }
-
-        //Function to show complete weather data
-        void readWeather(SQLiteConnection sqlite_conn)
-        {
-            SQLiteDataReader sqlite_datareader;
-            SQLiteCommand sqlite_cmd;
-            sqlite_cmd = sqlite_conn.CreateCommand();
-            sqlite_cmd.CommandText = "SELECT lux, temp, humidity, date FROM weather";
-
-            sqlite_datareader = sqlite_cmd.ExecuteReader();
-            while (sqlite_datareader.Read())
-            {
-                //get data from different rows in database, represented by integer value as parameter
-                string myLUXreader = sqlite_datareader.GetString(0);
-                string myTEMPreader = sqlite_datareader.GetString(1);
-                string myHUMreader = sqlite_datareader.GetString(2);
-                string myDATEreader = sqlite_datareader.GetString(3);
-
-                //Manipulate data to only show relevant decimals
-                myDATEreader = myDATEreader.Remove(myDATEreader.Length - 7);
-
-
-                chart1.Series["Lux"].Points.AddXY(myDATEreader, myLUXreader);
-                chart2.Series["Temp"].Points.AddXY(myDATEreader, myTEMPreader);
-                chart3.Series["Humidity"].Points.AddXY(myDATEreader, myHUMreader);
-
-            }
-        }
-
-        //Function to show current weather data
-        void readCurrentWeather(SQLiteConnection sqlite_conn)
-        {
-            SQLiteDataReader sqlite_datareader;
-            SQLiteCommand sqlite_cmd;
-            sqlite_cmd = sqlite_conn.CreateCommand();
-            sqlite_cmd.CommandText = "SELECT lux, temp, humidity, date FROM weather order by ROWID desc limit 1";
-
-            sqlite_datareader = sqlite_cmd.ExecuteReader();
-            while (sqlite_datareader.Read())
-            {
-                //get data from different rows in database, represented by integer value as parameter
-                string myLUXreader = sqlite_datareader.GetString(0);
-                string myTEMPreader = sqlite_datareader.GetString(1);
-                string myHUMreader = sqlite_datareader.GetString(2);
-                string myDATEreader = sqlite_datareader.GetString(3);
-
-                //Manipulate data to only show relevant decimals
-                myDATEreader = myDATEreader.Remove(myDATEreader.Length - 7);
-
-
-                chartLightlevel.Series["Lightlevel"].Points.AddXY(myDATEreader, myLUXreader);
-                chartTemperature.Series["Temperature"].Points.AddXY(myDATEreader, myTEMPreader);
-                chartHumidity.Series["Humidity"].Points.AddXY(myDATEreader, myHUMreader);
-
-            }
+            //create ReadWeather object
+            //read complete weather history
+            //created sqlConnection is sent as parameter to establsih connection and execute query
+            ReadWeather readW = new ReadWeather();
+            readW.readWeather(sqlConnection.CreateConnection());
         }
 
         //Clear chart data to ready the charts for next injection of data to be displayed
@@ -189,12 +110,9 @@ namespace TestiDB
             chart6.Series["Last 30 Lux Values"].Points.Clear();
         }
 
-
         //Button functionality for selecting what data to display
         private void buttonTemp_Click(object sender, EventArgs e)
         {
-           
-
             if (clikkeri1 == true)
             {
                 clikkeri1 = false;
@@ -208,7 +126,6 @@ namespace TestiDB
                 chart5.Hide();
             }
         }
-
         private void buttonLight_Click(object sender, EventArgs e)
         {
             if (clikkeri2 == true)
@@ -224,7 +141,6 @@ namespace TestiDB
                 chart6.Hide();
             }
         }
-
         private void buttonHumidity_Click(object sender, EventArgs e)
         {
             if (clikkeri3 == true)

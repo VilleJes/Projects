@@ -7,13 +7,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Threading;
 
 namespace TestiDB
 {
     public partial class Form1 : Form
     {
         bool clikkeri1, clikkeri2, clikkeri3 = true;
-        private Timer timer1;
+        private System.Windows.Forms.Timer timer1;
         public Form1()
         {
             InitializeComponent();
@@ -23,9 +24,9 @@ namespace TestiDB
         //set to update once every 60 seconds
         public void InitTimer()
         {
-            timer1 = new Timer();
+            timer1 = new System.Windows.Forms.Timer();
             timer1.Tick += new EventHandler(timer1_Tick);
-            timer1.Interval = 60000;
+            timer1.Interval = 100;
             timer1.Start();
         }
 
@@ -71,7 +72,8 @@ namespace TestiDB
             chartHumidity.ChartAreas["ChartArea1"].AxisX.LabelStyle.Enabled = false;
 
             //start the timer for chart updating
-            InitTimer();
+            Thread timerThread = new Thread(new ThreadStart(InitTimer));
+            //InitTimer();
             //create SQLiteConnection object from SqliteConnection class
             SqliteConnection sqlConnection = new SqliteConnection();
 

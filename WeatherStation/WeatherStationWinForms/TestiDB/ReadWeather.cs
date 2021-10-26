@@ -38,6 +38,7 @@ namespace TestiDB
                 Class1.form1.chart2.Series["Temp"].Points.AddXY(DATEreader, wData.getTEMPreader());
                 Class1.form1.chart3.Series["Humidity"].Points.AddXY(DATEreader, wData.getHUMreader());
             }
+            sqlite_conn.Close();
         }
     }
 }

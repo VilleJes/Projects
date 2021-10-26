@@ -39,6 +39,7 @@ namespace TestiDB
                 Class1.form1.chart5.Series["Last 30 Celcius Values"].Points.AddXY(DATEreader, wData.getTEMPreader());
                 Class1.form1.chart6.Series["Last 30 Lux Values"].Points.AddXY(DATEreader, wData.getLUXreader());
             }
+            sqlConnection.Close();
         }
     }
 }

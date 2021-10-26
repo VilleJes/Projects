@@ -26,7 +26,7 @@ namespace TestiDB
         {
             timer1 = new System.Windows.Forms.Timer();
             timer1.Tick += new EventHandler(timer1_Tick);
-            timer1.Interval = 100;
+            timer1.Interval = 1000;
             timer1.Start();
         }
 

@@ -24,7 +24,7 @@ namespace TestiDB
             }
             catch (Exception ex)
             {
-
+                Console.WriteLine(ex);
             }
             //pass the generated connection as parameter to be used with the data read functions
             return sqlite_conn;

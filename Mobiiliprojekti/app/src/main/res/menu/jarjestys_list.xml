@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/alinHinta"
+        android:title="Alin hinta" />
+    <item
+        android:id="@+id/ylinHinta"
+        android:title="Ylin hinta"/>
+    <item
+        android:id="@+id/uusinIlmoitus"
+        android:title="Uusin ilmoitus"/>
+    <item
+        android:id="@+id/vanhinIlmoitus"
+        android:title="Vanhin ilmoitus"/>
+    <item
+        android:id="@+id/nelioMaara"
+        android:title="Neliömäärä"/>
+    <item
+        android:id="@+id/saunallinen"
+        android:title="Saunallinen"/>
+</menu>

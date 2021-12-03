@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MuokkausActivity"
+    android:orientation="vertical"
+    style="@style/background">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bTakaisinMokkiListaan">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:fontFamily="@font/candara"
+                android:id="@+id/TextOtsikko"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:text="Otsikko:"/>
+            <EditText
+                android:fontFamily="@font/candara"
+                android:id="@+id/EditOtsikko"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Anna ilmoituksellesi otsikko:"/>
+
+
+
+            <TextView
+                android:fontFamily="@font/candara"
+                android:id="@+id/TextHinta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="Hinta €/pvä:"/>
+            <EditText
+                android:fontFamily="@font/candara"
+                android:id="@+id/EditHinta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Aseta hinta päivältä"
+                android:inputType="numberDecimal"/>
+
+            <TextView
+                android:fontFamily="@font/candara"
+                android:id="@+id/TextOsoite"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="Mökin osoite:"/>
+            <EditText
+                android:fontFamily="@font/candara"
+                android:id="@+id/EditOsoite"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Mökin osoite:"/>
+
+            <TextView
+                android:fontFamily="@font/candara"
+                android:id="@+id/TextHuoneMaara"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="Huoneiden lukumäärä:"/>
+            <Spinner
+                android:id="@+id/HuoneMaaraSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/HuoneMaara">
+            </Spinner>
+
+            <TextView
+                android:fontFamily="@font/candara"
+                android:id="@+id/TextNelioMaara"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="Kohteen pinta-ala:"/>
+            <EditText
+                android:fontFamily="@font/candara"
+                android:id="@+id/EditNelioMaara"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Aseta kohteen pinta-ala"
+                android:inputType="numberDecimal"/>
+
+            <TextView
+                android:fontFamily="@font/candara"
+                android:id="@+id/TextLammitys"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="Kohteen Lämmitys:"/>
+            <EditText
+                android:fontFamily="@font/candara"
+                android:id="@+id/EditLammitys"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Kohteen lämmitys" />
+
+            <TextView
+                android:fontFamily="@font/candara"
+                android:id="@+id/TextVesi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="Onko mökillä juokseva vesi?"/>
+            <Spinner
+                android:id="@+id/VesiSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/kylla_ei_spinner">
+            </Spinner>
+
+            <TextView
+                android:fontFamily="@font/candara"
+                android:id="@+id/TextSauna"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="Onko kohteessa saunaa?"/>
+            <Spinner
+                android:id="@+id/SaunaSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/kylla_ei_spinner"/>
+
+
+            <TextView
+                android:fontFamily="@font/candara"
+                android:id="@+id/TextKuvaus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="Kuvaus:"/>
+            <EditText
+                android:fontFamily="@font/candara"
+                android:id="@+id/EditKuvaus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="anna kuvaus mökistäsi:"/>
+
+
+            <TextView
+                style="@style/button"
+                android:fontFamily="@font/candara"
+                android:id="@+id/bChooseImage"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Valitse kuva">
+            </TextView>
+
+            <ImageView
+                android:id="@+id/ImageViewUpload"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginBottom="6dp">
+            </ImageView>
+
+            <ProgressBar
+                android:id="@+id/UploadImageProgressBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/Widget.AppCompat.ProgressBar.Horizontal">
+            </ProgressBar>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        style="@style/button"
+        android:fontFamily="@font/candara"
+        android:id="@+id/bTakaisinMokkiListaan"
+        android:layout_width="90dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:text="Takaisin"/>
+
+    <TextView
+        style="@style/button"
+        android:fontFamily="@font/candara"
+        android:id="@+id/bHyväksy"
+        android:layout_width="90dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:text="Hyväksy"/>
+
+</RelativeLayout>

@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/drawer_layout"
+    style="@style/background"
+    tools:context=".Mokki_List">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/main_toolbar"
+            android:id="@+id/mainToolbar">
+        </include>
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:id="@+id/bNaytaKaikkienMokit"
+                style="@style/button"
+                android:layout_width="95dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="2dp"
+                android:layout_marginBottom="16dp"
+                android:fontFamily="@font/candara"
+                android:text="Kaikki"
+                app:layout_constraintBottom_toTopOf="@+id/editTextSearch"
+                app:layout_constraintEnd_toStartOf="@+id/bOmatMökit"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"></TextView>
+
+            <TextView
+                android:id="@+id/bOmatMökit"
+                style="@style/button"
+                android:layout_width="95dp"
+                android:layout_height="40dp"
+                android:layout_marginBottom="16dp"
+                android:layout_toEndOf="@id/bNaytaKaikkienMokit"
+                android:fontFamily="@font/candara"
+                android:text="Omat "
+                app:layout_constraintBottom_toTopOf="@+id/editTextSearch"
+                app:layout_constraintEnd_toStartOf="@+id/bVuokratut"
+                app:layout_constraintStart_toEndOf="@+id/bNaytaKaikkienMokit"
+                app:layout_constraintTop_toTopOf="parent"></TextView>
+
+
+            <TextView
+                android:id="@+id/bVuokratut"
+                style="@style/button"
+                android:layout_width="95dp"
+                android:layout_height="40dp"
+                android:layout_marginBottom="16dp"
+                android:layout_toEndOf="@id/bOmatMökit"
+                android:fontFamily="@font/candara"
+                android:text="Vuokratut"
+                app:layout_constraintBottom_toTopOf="@+id/editTextSearch"
+                app:layout_constraintEnd_toStartOf="@+id/bSuosikit"
+                app:layout_constraintStart_toEndOf="@+id/bOmatMökit"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0"></TextView>
+
+            <TextView
+                android:id="@+id/bSuosikit"
+                style="@style/button"
+                android:layout_width="95dp"
+                android:layout_height="40dp"
+                android:layout_marginBottom="16dp"
+                android:layout_toEndOf="@id/bOmatMökit"
+                android:drawableTop="@drawable/ic_sydan_suosikkinappi"
+                android:fontFamily="@font/candara"
+                app:layout_constraintBottom_toTopOf="@+id/editTextSearch"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/bVuokratut"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0"></TextView>
+
+            <EditText
+                android:id="@+id/editTextSearch"
+                android:textColor="@color/white"
+                android:layout_width="294dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="4dp"
+                android:layout_marginBottom="8dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/jarjestysButton"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:fontFamily="@font/candarab"
+                android:id="@+id/jarjestysButton"
+                style="@style/button"
+                android:layout_width="81dp"
+                android:layout_height="31dp"
+                android:layout_gravity="right"
+                android:layout_marginVertical="10dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="19dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="31dp"
+                android:layout_toEndOf="@id/editTextSearch"
+                android:onClick="onClick_jarjestysmenu"
+                android:text="Järjestä..."
+                android:textSize="14dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/editTextSearch"
+                app:layout_constraintTop_toBottomOf="@+id/bSuosikit" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="4dp"
+                android:scrollbars="vertical"/>
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="@color/white">
+
+        <include
+            layout="@layout/main_drawer"/>
+
+    </RelativeLayout>
+
+</androidx.drawerlayout.widget.DrawerLayout>

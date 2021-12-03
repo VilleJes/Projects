@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/background">
+
+    <include
+        layout="@layout/profiili_toolbar"
+        android:id="@+id/checkoutToolbar"/>
+
+    <TextView
+        android:fontFamily="@font/candarab"
+        style="@style/button"
+        android:id="@+id/textViewMökki"
+        android:textColor="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/checkoutToolbar"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:gravity="center"
+        android:padding="20dp"
+        android:text="TextView" />
+    <TextView
+        android:fontFamily="@font/candarab"
+        android:textColor="@color/white"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewVuokraaja"
+        android:text="Vuokraaja:"
+
+        android:layout_below="@id/textViewMökki"
+        android:padding="20dp"/>
+    <TextView
+        android:fontFamily="@font/candarab"
+        android:textColor="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewVuokraajaNimi"
+        android:layout_toRightOf="@id/textViewVuokraaja"
+        android:layout_below="@id/textViewMökki"
+        android:text="yes"
+        android:padding="20dp"/>
+    <TextView
+        android:fontFamily="@font/candarab"
+        android:textColor="@color/white"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewOsoite"
+        android:text="Osoite:"
+
+        android:layout_below="@id/textViewVuokraaja"
+        android:padding="20dp"/>
+    <TextView
+        android:fontFamily="@font/candarab"
+        android:textColor="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewOsoiteMaarat"
+        android:layout_toRightOf="@id/textViewOsoite"
+        android:layout_below="@id/textViewVuokraaja"
+        android:text="yes"
+        android:padding="20dp"/>
+    <TextView
+        android:fontFamily="@font/candarab"
+        android:textColor="@color/white"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewPaivat"
+        android:text="Valitut päivät:"
+        android:layout_below="@id/textViewOsoite"
+        android:padding="20dp"/>
+    <TextView
+        android:fontFamily="@font/candarab"
+        android:textColor="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewPaivaMaarat"
+        android:layout_toRightOf="@id/textViewPaivat"
+        android:layout_below="@id/textViewOsoite"
+        android:text="yes"
+        android:padding="20dp"/>
+    <TextView
+        android:fontFamily="@font/candarab"
+        android:textColor="@color/white"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewHinta"
+        android:text="Hinta:"
+        android:layout_below="@id/textViewPaivat"
+        android:padding="20dp"/>
+    <TextView
+        android:fontFamily="@font/candarab"
+        android:textColor="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewHintaMaarat"
+        android:layout_toRightOf="@id/textViewHinta"
+        android:layout_below="@id/textViewPaivat"
+        android:text="yes"
+        android:padding="20dp"/>
+    <TextView
+        android:fontFamily="@font/candarab"
+        android:textColor="@color/white"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewPalvelut"
+        android:text="Lisäpalvelut:"
+        android:layout_below="@id/textViewHinta"
+        android:padding="20dp"/>
+    <TextView
+        android:fontFamily="@font/candarab"
+        android:textColor="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewHintaPalvelutMaara"
+        android:layout_toRightOf="@id/textViewPalvelut"
+        android:layout_below="@id/textViewHinta"
+        android:text="yes"
+        android:padding="20dp"/>
+
+    <TextView
+        style="@style/button"
+        android:id="@+id/toggleKortti"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewMaksutapa"
+
+        android:layout_marginTop="-120dp"
+        android:layout_marginRight="46dp"
+        android:layout_toLeftOf="@id/toggleMobilepay"
+        android:padding="20dp"
+        android:text="Korttimaksu" />
+
+    <TextView
+        style="@style/button"
+        android:id="@+id/toggleMobilepay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewMaksutapa"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="-120dp"
+        android:layout_marginHorizontal="170dp"
+        android:layout_marginEnd="50dp"
+        android:padding="20dp"
+        android:text="Mobilepay" />
+
+    <TextView
+        android:fontFamily="@font/candarab"
+        android:textColor="@color/white"
+        android:id="@+id/textViewMaksutapa"
+        android:layout_width="173dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/checkoutToolbar"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="132dp"
+        android:layout_marginTop="469dp"
+        android:layout_marginEnd="132dp"
+        android:layout_marginBottom="152dp"
+        android:gravity="center"
+        android:text="Valitse maksutapa:" />
+</RelativeLayout>

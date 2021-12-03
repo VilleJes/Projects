@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:paddingTop="5dp"
+        android:layout_margin="4dp"
+        tools:context=".MokkiVaraukset"
+        style="@style/background">
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:padding="2dp"
+            android:layout_marginBottom="24dp"
+            android:id="@+id/imageViewMokkiKuvaAdapter"/>
+
+
+        <TextView
+            android:fontFamily="@font/candara"
+            android:id="@+id/TextViewOtsikkoAdapter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/imageViewMokkiKuvaAdapter"
+            android:text="OtsikkoTest"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:padding="10dp"/>
+
+        <TextView
+            android:fontFamily="@font/candara"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/imageViewMokkiKuvaAdapter"
+            android:layout_below="@id/TextViewOtsikkoAdapter"
+            android:layout_marginEnd="8dp"
+            android:text="hinta"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:padding="10dp"
+            android:id="@+id/TextViewHintaAdapter"/>
+
+        <TextView
+            android:fontFamily="@font/candara"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/imageViewMokkiKuvaAdapter"
+            android:layout_below="@id/TextViewHintaAdapter"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:text="paivat"
+            android:padding="10dp"
+            android:id="@+id/TextViewPaivatAdapter"/>
+    <TextView
+        android:fontFamily="@font/candara"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageViewMokkiKuvaAdapter"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:text="Varaajan yhteystiedot: "
+        android:padding="10dp"
+        android:id="@+id/TextViewVuokraajaAdapter"/>
+    <TextView
+        android:fontFamily="@font/candara"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/TextViewVuokraajaAdapter"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:text="Sähköposti: "
+        android:padding="10dp"
+        android:id="@+id/TextViewVuokraajaSpostiAdapter"/>
+    <TextView
+        android:fontFamily="@font/candara"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/TextViewVuokraajaSpostiAdapter"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:text="Numero: "
+        android:padding="10dp"
+        android:id="@+id/TextViewVuokraajaNroAdapter"/>
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_below="@+id/TextViewVuokraajaNroAdapter"
+        android:background="?android:attr/listDivider" />
+</RelativeLayout>

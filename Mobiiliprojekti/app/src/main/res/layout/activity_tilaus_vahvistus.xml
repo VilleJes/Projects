@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TilausVahvistusActivity"
+    style="@style/background">
+
+    <include
+        android:id="@+id/tilausToolbar"
+        layout="@layout/profiili_toolbar" />
+
+    <TextView
+        android:fontFamily="@font/candarab"
+        android:id="@+id/textView3"
+        android:layout_width="189dp"
+        android:layout_height="27dp"
+        android:text="Kiitos tilauksesta!"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.072"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tilausToolbar"
+        app:layout_constraintVertical_bias="0.075" />
+
+    <TextView
+        android:fontFamily="@font/candarab"
+        android:id="@+id/textViewTilausNumero"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:text="Tilausnumero"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.099"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:fontFamily="@font/candara"
+        android:id="@+id/textViewTilausOtsikko"
+        android:layout_width="250dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="41dp"
+        android:gravity="left"
+        android:textColor="@color/white"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.099"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTilausNumero"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:fontFamily="@font/candara"
+        android:id="@+id/textViewTilausOsoite"
+        android:layout_width="250dp"
+        android:layout_height="27dp"
+        android:gravity="left"
+        android:textColor="@color/white"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.099"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTilausOtsikko"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:fontFamily="@font/candara"
+        android:id="@+id/textViewTilausMyyjä"
+        android:layout_width="250dp"
+        android:layout_height="27dp"
+        android:gravity="left"
+        android:textColor="@color/white"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.099"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTilausOsoite"
+        app:layout_constraintVertical_bias="0.442" />
+
+    <TextView
+        android:fontFamily="@font/candara"
+        android:id="@+id/textViewTilausSahkoposti"
+        android:layout_width="250dp"
+        android:layout_height="27dp"
+        android:gravity="left"
+        android:textColor="@color/white"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.099"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTilausMyyjä"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:fontFamily="@font/candara"
+        android:id="@+id/textViewTilausPuhNro"
+        android:layout_width="250dp"
+        android:layout_height="27dp"
+        android:gravity="left"
+        android:textColor="@color/white"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.099"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTilausSahkoposti"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:fontFamily="@font/candara"
+        android:id="@+id/textViewTilausPaivat"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:gravity="left"
+        android:textColor="@color/white"
+        android:text=""
+        app:layout_constraintBottom_toTopOf="@+id/textView13"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.099"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTilausOsoite"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:fontFamily="@font/candara"
+        android:id="@+id/textView13"
+        android:layout_width="250dp"
+        android:layout_height="70dp"
+        android:textColor="@color/white"
+        android:text="Otathan mökintarjoajan kaikki yhteystiedot talteen. Voitte ottaa suoraan häneen yhteyttä jos tulee kysyttävää."
+        app:layout_constraintBottom_toBottomOf="parent"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.099"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTilausPuhNro"
+        app:layout_constraintVertical_bias="0.363" />
+
+    <TextView
+        android:fontFamily="@font/candarab"
+        android:id="@+id/textViewNaytaNimi"
+        android:layout_width="140dp"
+        android:layout_height="20dp"
+        android:text="Vuokraajan tiedot:"
+        android:textSize="11dp"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/textViewTilausMyyjä"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.059"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTilausPaivat"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:fontFamily="@font/candarab"
+        android:id="@+id/textViewNaytaMokki"
+        android:layout_width="140dp"
+        android:layout_height="20dp"
+        android:text="Mökin tiedot:"
+        android:textSize="11dp"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/textViewTilausOtsikko"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.059"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTilausNumero"
+        app:layout_constraintVertical_bias="0.9" />
+
+    <TextView
+        android:fontFamily="@font/candarab"
+        android:id="@+id/bEtusivulle"
+        style="@style/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="124dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="151dp"
+        android:layout_marginBottom="44dp"
+        android:onClick="etusivulle"
+        android:text="Palaa Etusivulle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="4dp"
+    android:layout_marginTop="4dp"
+    android:layout_marginBottom="4dp"
+    android:id="@+id/cardView">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="4dp"
+        style="@style/background">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:padding="2dp"
+            android:layout_marginBottom="24dp"
+            android:id="@+id/imageViewMokkiKuva"/>
+
+
+        <TextView
+            android:fontFamily="@font/candara"
+            android:id="@+id/TextViewOtsikko"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:text="OtsikkoTest"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <TextView
+            android:fontFamily="@font/candara"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_toLeftOf="@id/TextViewEuro"
+            android:layout_marginEnd="8dp"
+            android:text="hinta"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:id="@+id/TextViewHinta"/>
+
+        <TextView
+            android:fontFamily="@font/candara"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:text="€/Pv"
+            android:id="@+id/TextViewEuro"/>
+
+        <ToggleButton
+            android:id="@+id/favoriteButton"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="15dp"
+            android:background="@drawable/favorite_toggle_selector"
+            android:textOff=""
+            android:textOn=""
+            />
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MaksuActivity"
+    style="@style/background">
+
+    <Button
+        style="@style/button"
+        android:fontFamily="@font/candara"
+        android:id="@+id/buttonPaypal"
+        android:layout_width="259dp"
+        android:layout_height="82dp"
+        android:text="Paypal"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.597" />
+
+    <Button
+        style="@style/button"
+        android:fontFamily="@font/candara"
+        android:id="@+id/buttonMobilepay"
+        android:layout_width="259dp"
+        android:layout_height="82dp"
+        android:text="Mobilepay"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.781" />
+
+    <Button
+        style="@style/button"
+        android:fontFamily="@font/candara"
+        android:id="@+id/buttonKorttimaksu"
+        android:layout_width="259dp"
+        android:layout_height="82dp"
+        android:text="Korttimaksu"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.416" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

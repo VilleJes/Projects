@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".IlmoitusVarmistus"
+    android:orientation="vertical"
+    style="@style/background">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bTakaisinIlmoitukseen">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:fontFamily="@font/candara"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Otsikko:"
+                android:textColor="@color/white"
+                android:textSize="20dp">
+            </TextView>
+            <TextView
+                android:id="@+id/sOtsikko"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="">
+            </TextView>
+
+            <ImageView
+                android:id="@+id/ImageViewUpload"
+                android:layout_width="match_parent"
+                android:layout_height="200dp">
+
+            </ImageView>
+
+            <TextView
+                android:fontFamily="@font/candara"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hinta €/pvä:"
+                android:textColor="@color/white"
+                android:textSize="20dp" />
+            <TextView
+                android:id="@+id/sHinta"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="">
+            </TextView>
+
+            <TextView
+                android:fontFamily="@font/candara"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kohteen osoite:"
+                android:textColor="@color/white"
+                android:textSize="20dp">
+            </TextView>
+            <TextView
+                android:id="@+id/sOsoite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="">
+            </TextView>
+
+            <TextView
+                android:fontFamily="@font/candara"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Huonemäärä:"
+                android:textColor="@color/white"
+                android:textSize="20dp">
+            </TextView>
+            <TextView
+                android:id="@+id/sHuoneet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="">
+            </TextView>
+
+            <TextView
+                android:fontFamily="@font/candara"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kohteen neliömäärä:"
+                android:textColor="@color/white"
+                android:textSize="20dp">
+            </TextView>
+            <TextView
+                android:id="@+id/sNeliot"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="">
+            </TextView>
+
+            <TextView
+                android:fontFamily="@font/candara"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kohteen lämmitys:"
+                android:textColor="@color/white"
+                android:textSize="20dp">
+            </TextView>
+            <TextView
+                android:id="@+id/sLammitys"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="">
+            </TextView>
+
+            <TextView
+                android:fontFamily="@font/candara"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Onko kohteessa juokseva vesi?"
+                android:textColor="@color/white"
+                android:textSize="20dp">
+            </TextView>
+            <TextView
+                android:id="@+id/sVesi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="">
+            </TextView>
+
+            <TextView
+                android:fontFamily="@font/candara"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Onko kohteessa saunaa?"
+                android:textColor="@color/white"
+                android:textSize="20dp">
+            </TextView>
+            <TextView
+                android:id="@+id/sSauna"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="">
+            </TextView>
+
+            <TextView
+                android:fontFamily="@font/candara"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Valitsemasi vuokraus päivät:"
+                android:textColor="@color/white"
+                android:textSize="20dp">
+            </TextView>
+            <TextView
+                android:id="@+id/textViewDates"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </TextView>
+
+            <TextView
+                android:fontFamily="@font/candara"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kuvaus:"
+                android:textColor="@color/white"
+                android:textSize="20dp">
+            </TextView>
+            <TextView
+                android:id="@+id/sKuvaus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="">
+            </TextView>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/bTakaisinIlmoitukseen"
+        style="@style/button"
+        android:layout_width="104dp"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:fontFamily="@font/candara"
+        android:text="Takaisin" />
+
+    <TextView
+        style="@style/button"
+        android:fontFamily="@font/candara"
+        android:id="@+id/bAsetaVuokralle"
+        android:layout_width="104dp"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:text="Ilmoita"/>
+
+</RelativeLayout>
